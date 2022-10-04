@@ -28,6 +28,7 @@ p {
     font-weight: 500;
 }
 
+
 /* Navbar */
 
 .navBar {
@@ -55,14 +56,43 @@ p {
 }
 
 .first-section {
-    padding: 3% 15%;
+    padding: 3% 15% 15%;
 }
 
 .intro-img {
     width: 60%;
     transform: rotate(25deg);
-    z-index: 10;
+    position: absolute;
+    right: 30%;
 }
+
+@media (max-width: 1280px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+    .first-section {
+        text-align: center;
+    }
+
+    .intro-img {
+        width: 100%;
+        transform: none;
+        position: static;
+    }
+}
+
+
+
+
 
 .download-button {
     margin: 5% 3% 5% 0%;
@@ -70,8 +100,11 @@ p {
 
 /* Segunda sección */
 
-.second-section {
+#features {
+    background-color: white;
     padding: 5% 15%;
+    position: relative;
+    
 }
 
 .feature {
@@ -123,14 +156,22 @@ p {
     padding: 100px;
 }
 
-.card {
-    position: relative;
-    top: 0px;
-}
-
 .pricing-column {
     text-align: center;
     margin: 3% 2%;
+}
+
+/* CTA */
+
+#cta {
+    background-color: #ff4c68;
+    color: white;
+    padding: 8%;
+}
+
+.footer>p>i {
+    padding: .5%;
+    color: black;
 }
 
 
